@@ -1,0 +1,58 @@
+
+  
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+
+  #deployedContractsList {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Display items vertically */
+}
+
+.contract-item { 
+    flex: 1 1 calc(50% - 40px); /* Each container takes equal space, minus margins */
+    margin: 20px;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0) !important;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #000000;; /* Display child divs vertically */
+}
+
+.contract-item > div {
+    margin-bottom: 5px;
+    overflow-wrap: break-word; /* Wrap long text to prevent overflow */
+}
+
+.contract-item input[type="number"],
+.contract-item input[type="text"],
+.contract-item button {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    max-width: 100%; /* Ensure inputs and buttons don't overflow */
+}
+
+.contract-item button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contract-item button:hover {
+    background-color: #45a049;
+}

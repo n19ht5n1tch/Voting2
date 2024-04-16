@@ -1,0 +1,121 @@
+/* vb1.css */
+.candidate-name {
+    flex-grow: 1; /* This will make the span grow to fill the remaining space */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+}
+
+.contract {
+    display: grid !important;
+    grid-template-rows: auto auto !important;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.candidate {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #cbcbcb;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+.candidate button {
+    margin-left: auto;
+    background-color: #45a049a4;
+    color: #cbcbcb;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.candidate button:hover {
+    background-color: #45a049;
+    color: #fff;
+}
+
+.candidates {
+    display: flex;
+    flex-direction: column;
+}
+
+.voteButton {
+    margin-left: auto;
+}
+
+
+
+.candidates-list {
+   
+    display: none ;
+}
+
+.contract-name.active + .candidates-list {
+    display: block;
+
+}
+
+.dropdown-arrow {
+    width: 15px;
+    height: 15px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid black; /* Adjust color as needed */
+}
+
+.dropdown-arrow.icon {
+    background-image: url('dropdown.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+}
+
+/* Initial state of the candidates list */
+
+
+
+.contract-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Adjust padding as needed */
+    border-bottom: 1px solid #ccc; /* Optional: Add a border for visual separation */
+}
+
+.contract-text {
+    flex-grow: 1; /* Allow the contract-text to take up remaining space */
+}
+
+.duration-container {
+    flex: 0 0 auto; /* Do not grow or shrink, maintain initial size */
+    margin: auto; /* Center horizontally and vertically */
+    text-align: center; /* Center text inside the duration container */
+}
+
+#deployedContractsList {
+    max-width: 1200px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding as needed */
+}
+
+.candidate-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+.candidate-name {
+    margin-right: 10px; /* Adjust as needed */
+}
+
+.vote-button {
+    margin-left: auto;
+}
